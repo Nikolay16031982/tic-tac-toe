@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
 
 header {
   height: 80px;
@@ -10,14 +14,32 @@ header {
   margin: 0 auto 100px auto;
   padding: 0 40px ;
   background: rgba(70, 130, 180, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 70px;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(234, 230, 237);
+}
+nav ul li:hover {
+  color: #fff;
+  outline: 0;
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
 .logo-contaner{
   width: 80px;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  column-gap: 40px;
 }
 
 .logo-contaner img{
@@ -26,6 +48,23 @@ header {
   border-radius: 50%;
 }
 
+button {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 0.6em;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px 20px;
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+}
+button:hover, button:focus {
+  color: #fff;
+  outline: 0;
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
 .contaner {
   width: 200px;
   height: 200px;
